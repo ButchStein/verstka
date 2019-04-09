@@ -3,11 +3,11 @@
 } */
 
 html {
-    font-family: 'Ropa Sans', sans-serif; 
+    font-family: 'Ropa Sans', sans-serif;
     /* DINCyr Medium я не нашел в открытом доступе  */
 }
 
-.main-container {
+.content {
     box-sizing: border-box;
     width: 1275px;
     height: 982px;
@@ -20,13 +20,17 @@ html {
     position: relative;
 }
 
-.block-555 {
+.content__block {
     width: 555px;
     height: 982px;
     margin-left: 155px;
 }
 
-.block-555 h2 {
+.content__logo img {
+    margin-top: 55px;
+}
+
+.content_h2 {
     height: 62px;
     background-color: #ff9000;
     color: #fff;
@@ -37,7 +41,7 @@ html {
     text-align: center;
 }
 
-.block-555 h3 {
+.content_h3 {
     box-sizing: border-box;
     height: 48px;
     color: #323441;
@@ -47,7 +51,7 @@ html {
     padding: 10px;
 }
 
-.block-555 h1 {
+.content_h1 {
     height: 75px;
     background-color: #ff9000;
     color: #fff;
@@ -57,7 +61,7 @@ html {
     padding: 10px;
 }
 
-.block-555 .p1 {
+.content_p {
     color: #323441;
     font-size: 21px;
     font-weight: bold;
@@ -66,11 +70,7 @@ html {
     padding: 0 0 0 100px;
 }
 
-.logo img {
-    margin-top: 55px;
-}
-
-.block-555 .counter span {
+.content__counter {
     width: 386px;
     height: 87px;
     display: inline-block;
@@ -78,7 +78,7 @@ html {
     margin-left: 53px;
 }
 
-.sendmail {
+.content__form {
     height: 47px;
     content: '';
     display: block;
@@ -86,7 +86,7 @@ html {
     margin-top: 63px;
 }
 
-.sendmail .yourmail {
+.content__form-input {
     box-sizing: border-box;
     width: 239px;
     height: 47px;
@@ -100,7 +100,7 @@ html {
     float: left;
 }
 
-.sendmail .selcity {
+.content__form-select {
     width: 158px;
     height: 47px;
     background: #fff;
@@ -114,7 +114,7 @@ html {
     padding: 0 0 0 17px;
 }
 
-.sendmail input[type="submit"] {
+.content__form-button {
     width: 128px;
     height: 47px;
     background: #ff9000;
@@ -128,7 +128,7 @@ html {
     float: right;
 }
 
-.info {
+.content__info {
     box-sizing: border-box;
     height: 90px;
     background: #ff9000;
@@ -136,50 +136,43 @@ html {
     margin-top: 48px;
     font-family: 'OpenSans', sans-serif;
     font-size: 16px;
-}
-
-.info p {
     text-align: center;
     padding: 15px 25px;
 }
 
-.container {
+.block__reklama {
     margin-top: 35px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
 }
 
-.block-177-left {
+.block__left {
     width: 177px;
     height: 187px;
     background: #323441;
     float: left;
 }
 
-.block-177-left img {
+.block__left img {
     width: 33px;
     height: 32px;
     display: block;
     margin: 23px auto;
 }
 
-.block-177-left .slogan {
-    font-family: 'OpenSans', sans-serif;
-    font-size: 14px;
+.block-elem1 {
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
     margin: 0 15px;
-    text-align: center;
 }
 
-.block-177-left p {
-    font-family: 'OpenSans', sans-serif;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
+.block-elem2 {
     margin-top: 10px;
 }
 
-.block-182-center {
+.block__center {
     width: 182px;
     height: 187px;
     background: #323441;
@@ -187,64 +180,48 @@ html {
     margin-left: 10px;
 }
 
-.block-182-center img {
+.block__center img {
     width: 30px;
     height: 33px;
     display: block;
     margin: 22px auto;
 }
 
-.block-182-center .slogan {
-    font-family: 'OpenSans', sans-serif;
-    font-size: 14px;
+.block-elem3 {
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
     margin: 0 30px;
-    text-align: center;
 }
 
-.block-182-center p {
-    font-family: 'OpenSans', sans-serif;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
+.block-elem4 {
     margin: 10px 22px;
 }
 
-.block-177-right {
+.block__right {
     width: 177px;
     height: 187px;
     background: #323441;
     float: right;
 }
 
-.block-177-right img {
+.block__right img {
     width: 33px;
     height: 33px;
     display: block;
     margin: 22px auto;
 }
 
-.block-177-right .slogan {
-    font-family: 'OpenSans', sans-serif;
-    font-size: 14px;
+.block-elem5 {
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
     margin: 0 30px;
-    text-align: center;
 }
 
-.block-177-right p {
-    font-family: 'OpenSans', sans-serif;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
+.block-elem6 {
     margin: 10px 15px;
 }
 
-footer {
+.footer {
     box-sizing: border-box;
     width: 1275px;
     height: 48px;
@@ -252,7 +229,7 @@ footer {
     margin: 0 auto;
 }
 
-footer p {
+.footer-p {
     font-family: 'OpenSans', sans-serif;
     font-size: 14px;
     margin: 0 300px;
