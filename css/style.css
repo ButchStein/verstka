@@ -1,64 +1,54 @@
-/* html, body, h1, h2, h3, h4 {
-    margin: 0;
-} */
-
-html {
+html, body {
     font-family: 'Ropa Sans', sans-serif;
+    font-size: 14px;
     /* DINCyr Medium я не нашел в открытом доступе  */
 }
 
 .content {
     box-sizing: border-box;
     width: 1275px;
-    height: 982px;
-    background-image: url(../images/main_bg.png);
-    background-size: cover;
-    margin: 0 auto;
     content: '';
     display: block;
     clear: both;
-    position: relative;
 }
 
-.content__block {
+.content-bg {
+    background-image: url(../images/main_bg.png);
+    background-size: cover;
+}
+
+.content__wrapper {
+    box-sizing: border-box;
     width: 555px;
     height: 982px;
-    margin-left: 155px;
 }
 
-.content__logo img {
-    margin-top: 55px;
-}
-
-.content_h2 {
+.content__wrapper h2 {
     height: 62px;
     background-color: #ff9000;
     color: #fff;
     font-size: 48px;
     text-transform: uppercase;
-    margin-top: 45px;
-    padding-top: 7px;
+    /* margin-top: 45px;
+    padding-top: 7px; */
     text-align: center;
 }
 
-.content_h3 {
-    box-sizing: border-box;
+h3 {
     height: 48px;
     color: #323441;
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
-    padding: 10px;
 }
 
-.content_h1 {
+h1 {
     height: 75px;
     background-color: #ff9000;
     color: #fff;
     font-size: 60px;
     text-transform: uppercase;
     text-align: center;
-    padding: 10px;
 }
 
 .content_p {
@@ -66,28 +56,22 @@ html {
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 16.5px auto;
-    padding: 0 0 0 100px;
 }
 
 .content__counter {
-    width: 386px;
     height: 87px;
-    display: inline-block;
+}
+
+.counter-bg {
     background-image: url(../images/counter.png);
-    margin-left: 53px;
+    background-repeat: no-repeat;
 }
 
 .content__form {
     height: 47px;
-    content: '';
-    display: block;
-    clear: both;
-    margin-top: 63px;
 }
 
 .content__form-input {
-    box-sizing: border-box;
     width: 239px;
     height: 47px;
     background: #fff;
@@ -95,9 +79,6 @@ html {
     outline: none;
     font-family: 'OpenSans Light', sans-serif;
     color: #717279;
-    font-size: 14px;
-    padding: 0 0 0 17px;
-    float: left;
 }
 
 .content__form-select {
@@ -106,12 +87,8 @@ html {
     background: #fff;
     font-family: 'OpenSans Light', sans-serif;
     color: #717279;
-    font-size: 14px;
     border: 1px solid #ef782b;
     outline: none;
-    float: left;
-    margin-left: 10px;
-    padding: 0 0 0 17px;
 }
 
 .content__form-button {
@@ -124,101 +101,51 @@ html {
     text-transform: uppercase;
     border: 1px solid #fff;
     outline: none;
-    padding: 0;
-    float: right;
 }
 
 .content__info {
-    box-sizing: border-box;
-    height: 90px;
+    height: 89px;
     background: #ff9000;
     color: #fff;
-    margin-top: 48px;
     font-family: 'OpenSans', sans-serif;
     font-size: 16px;
     text-align: center;
-    padding: 15px 25px;
 }
 
-.block__reklama {
-    margin-top: 35px;
+.content__reklama {
+    height: 187px;
     font-family: 'OpenSans', sans-serif;
     font-size: 14px;
     color: #fff;
     text-align: center;
 }
 
-.block__left {
+.reklama__block {
     width: 177px;
     height: 187px;
     background: #323441;
     float: left;
 }
 
-.block__left img {
-    width: 33px;
-    height: 32px;
-    display: block;
-    margin: 23px auto;
-}
-
-.block-elem1 {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0 15px;
-}
-
-.block-elem2 {
-    margin-top: 10px;
-}
-
-.block__center {
+.reklama__center {
     width: 182px;
     height: 187px;
     background: #323441;
     float: left;
-    margin-left: 10px;
 }
 
-.block__center img {
-    width: 30px;
-    height: 33px;
-    display: block;
-    margin: 22px auto;
+.reklama-elem1 {
+    text-align: center;
+    display: inline-block;
 }
 
-.block-elem3 {
+.reklama-elem2 {
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 30px;
 }
 
-.block-elem4 {
-    margin: 10px 22px;
-}
-
-.block__right {
-    width: 177px;
-    height: 187px;
-    background: #323441;
-    float: right;
-}
-
-.block__right img {
-    width: 33px;
-    height: 33px;
-    display: block;
-    margin: 22px auto;
-}
-
-.block-elem5 {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0 30px;
-}
-
-.block-elem6 {
-    margin: 10px 15px;
+.reklama-elem3 {
+    text-align: center;
 }
 
 .footer {
@@ -226,13 +153,9 @@ html {
     width: 1275px;
     height: 48px;
     background-color: #323441;
-    margin: 0 auto;
 }
 
-.footer-p {
+.footer-copyright {
     font-family: 'OpenSans', sans-serif;
-    font-size: 14px;
-    margin: 0 300px;
-    padding-top: 15px;
     color: #fff;
 }
