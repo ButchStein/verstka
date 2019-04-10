@@ -8,7 +8,6 @@ html, body {
 .content {
     box-sizing: border-box;
     width: 100%;
-    min-height: 100%;
 }
 
 .content-bg {
@@ -16,7 +15,7 @@ html, body {
     background-size: cover;
 }
 
-.content__wrapper {
+.main-wrapper {
     box-sizing: border-box;
     width: 555px;
     margin-left: 155px;
@@ -24,30 +23,29 @@ html, body {
 
 .content__header {
     width: 555px;
-    height: 29px;
 }
 
 .header__logo {
+    height: 29px;
     margin-top: 60px;
-    ;
 }
 
-.content__item1 {
+.header__item1 {
     width: 555px;
     height: 75px;
 }
 
-.content__item2 {
+.header__item2 {
     width: 555px;
     height: 62px;
 }
 
-.content__item3 {
+.header__item3 {
     width: 555px;
     height: 49px;
 }
 
-.content__item4 {
+.header__item4 {
     width: 555px;
     height: 69px;
 }
@@ -152,12 +150,12 @@ html, body {
     float: right;
 }
 
-.content__info {
+.content__slogan {
     width: 555px;
     height: 89px;
 }
 
-.info-block {
+.slogan-block {
     background: #ff9000;
     color: #fff;
     font-family: 'OpenSans', sans-serif;
@@ -167,12 +165,12 @@ html, body {
     padding: 17px 30px;
 }
 
-.content__reklama {
+.content__options {
     width: 555px;
     height: 187px;
 }
 
-.reklama-theme {
+.options-theme {
     font-family: 'OpenSans', sans-serif;
     font-size: 14px;
     color: #fff;
@@ -180,14 +178,14 @@ html, body {
     margin-top: 35px;
 }
 
-.reklama__block {
+.options__block {
     width: 177px;
     height: 187px;
     background: #323441;
     float: left;
 }
 
-.reklama__center {
+.options__center {
     width: 182px;
     height: 187px;
     background: #323441;
@@ -198,27 +196,27 @@ html, body {
     margin-left: 9px;
 }
 
-.reklama__elem1 {
+.options__elem1 {
     text-align: center;
     display: inline-block;
     margin-top: 21px;
 }
 
-.reklama__elem2 {
+.options__elem2 {
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 17px;
     line-height: normal;
 }
 
-.reklama__elem3 {
+.options__elem3 {
     text-align: center;
     margin-top: 20px;
 }
 
 .footer {
     box-sizing: border-box;
-    width: 1275px;
+    width: 100%;
     height: 48px;
     background-color: #323441;
     margin: 0 auto;
