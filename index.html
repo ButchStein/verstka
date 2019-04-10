@@ -13,50 +13,74 @@
 <body>
     <div class="content content-bg">
         <div class="content__wrapper">
-            <header class="content__header content__logo">
+            <header class="content__header header__logo">
                 <a href="#"><img src="./images/main_logo.png" alt="logo"></a>
             </header>
-            <h2>Единый абонемент</h2>
-            <h3>для занятий у любого партнера</h3>
-            <h1>всего за 1990.–</h1>
-            <p class="content_p">до конца акции осталось:</p>
-            <div class="content__counter counter-bg"></div>
-            <div class="content__form">
-                <form action="#" method="post">
-                    <input type="email" name="email" class="content__form-input"
-                        placeholder="Введите свой E-mail адрес">
-                    <select class="content__form-select">
-                        <option>Выберите город</option>
-                    </select>
-                    <input type="submit" value="Отправить" class="content__form-button">
-                </form>
+            <div class="content__item2 content-h2">
+                <h2>Единый абонемент</h2>
             </div>
-            <div class="content__info">
+            <div class="content__item3 content-h3">
+                <h3>для занятий у любого партнера</h3>
+            </div>
+            <div class="content__item1 content-h1">
+                <h1>всего за 1990.–</h1>
+            </div>
+            <p class="content__item4 content-p">до конца акции осталось:</p>
+            <div class="content__counter counter-bg js-active"></div>
+            <form class="content__form form-theme" action="#" method="post">
+                <input type="email" name="email" class="content__form-input input-mod"
+                    placeholder="Введите свой E-mail адрес">
+                <select class="content__form-select select-mod">
+                    <option>Выберите город</option>
+                </select>
+                <input type="submit" value="Отправить" class="content__form-button button-mod">
+            </form>
+            <div class="content__info info-block">
                 <p><b>MonPass</b> дает возможность заниматься фитнессом, йогой, танцами и многим другим в вашем
                     городе<br>
                     по единому абонементу с ежемесячной оплатой.</p>
             </div>
-            <div class="content__reklama">
+            <div class="content__reklama reklama-theme">
                 <div class="reklama__block">
-                    <p class="reklama-elem1"><img src="images/ticket_bg.png" alt="ticket"></p>
-                    <p class="reklama-elem2">Единый абонемент</p>
-                    <p class="reklama-elem3">Занимайтесь в любое время в любом месте</p>
+                    <div class="reklama__elem1"><img src="images/ticket_bg.png" alt="ticket"></div>
+                    <div class="reklama__elem2">
+                        <p>Единый<br>
+                            абонемент</p>
+                    </div>
+                    <div class="reklama__elem3">
+                        <p>Занимайтесь в любое время в любом месте</p>
+                    </div>
                 </div>
-                <div class="reklama__center">
-                    <p class="reklama-elem1"><img src="images/manage_bg.png" alt="management"></p>
-                    <p class="reklama-elem2">Большой выбор</p>
-                    <p class="reklama-elem3">Выбирайте любого из тысяч наших партнеров</p>
+                <div class="reklama__center view-1">
+                    <div class="reklama__elem1"><img src="images/manage_bg.png" alt="management"></div>
+                    <div class="reklama__elem2">
+                        <p>Большой<br>
+                            выбор</p>
+                    </div>
+                    <div class="reklama__elem3">
+                        <p>Выбирайте любого<br>
+                            из тысяч наших<br>
+                            партнеров</p>
+                    </div>
                 </div>
-                <div class="reklama__block">
-                    <p class="reklama-elem1"><img src="images/discont_bg.png" alt="percent"></p>
-                    <p class="reklama-elem2">Огромные скидки</p>
-                    <p class="reklama-elem3">Пользователи MonPass экономят от</p>
+                <div class="reklama__block view-1">
+                    <div class="reklama__elem1"><img src="images/discont_bg.png" alt="percent"></div>
+                    <div class="reklama__elem2">
+                        <p>Огромные<br>
+                            скидки</p>
+                    </div>
+                    <div class="reklama__elem3">
+                        <p>Пользователи<br>
+                            MonPass экономят от</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <footer class="footer">
-        <p class="footer-copyright">2015 MonPass. Все права защищены</p>
+        <div class="footer__copyright">
+            <p>2015 MonPass. Все права защищены</p>
+        </div>
     </footer>
 </body>
 
