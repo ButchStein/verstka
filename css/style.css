@@ -2,16 +2,13 @@ html, body {
     font-family: 'Ropa Sans', sans-serif;
     font-size: 14px;
     /* DINCyr Medium я не нашел в открытом доступе  */
+    height: 100%;
 }
 
 .content {
     box-sizing: border-box;
-    width: 1275px;
-    height: 982px;
-    content: '';
-    display: block;
-    clear: both;
-    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
 }
 
 .content-bg {
