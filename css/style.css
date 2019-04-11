@@ -1,8 +1,6 @@
-html,
-body {
-  font-family: "Ropa Sans", sans-serif;
+html, body {
+  font-family: 'OpenSans', sans-serif;
   font-size: 14px;
-  /* DINCyr Medium я не нашел в открытом доступе  */
   height: 100%;
 }
 
@@ -23,6 +21,7 @@ body {
 }
 
 .header {
+  font-family: "DINCyr Medium";
   overflow: hidden;
 }
 
@@ -37,7 +36,7 @@ body {
   font-size: 60px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 10px;
+  letter-spacing: 4px;
 }
 
 .header__item2 {
@@ -56,23 +55,24 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding: 13px 0;
+  font-family: "DINCyr Medium";
 }
 
 .header__item4 {
-  font-family: "PlumBoldC", sans-serif;
+  font-family: 'PlumbBoldC';
   color: #323441;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 33px 0 0 105px;
+  padding: 33px 0 0 110px;
 }
 
 .header__counter {
   height: 87px;
-  background-image: url(../images/counter.png);
+  /* background-image: url(../images/counter.png);
   background-repeat: no-repeat;
-  background-size: auto;
-  margin: 25px 0 0 53px;
+  background-size: auto; */
+  margin-top: 20px;
 }
 
 .form {
@@ -115,7 +115,7 @@ body {
 
 .button-mod {
   background: #ff9000;
-  font-family: "OpenSans", serif;
+  font-family: "OpenSans", sans-serif;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -128,11 +128,14 @@ body {
   box-sizing: border-box;
   background: #ff9000;
   color: #fff;
-  font-family: "OpenSans", sans-serif;
   font-size: 16px;
   text-align: center;
   margin-top: 48px;
   padding: 17px 30px;
+}
+
+.invert {
+  font-weight: bold;
 }
 
 .options {
@@ -146,7 +149,6 @@ body {
 }
 
 .options-theme {
-  font-family: "OpenSans", sans-serif;
   font-size: 14px;
   color: #fff;
   text-align: center;
@@ -192,8 +194,42 @@ body {
 }
 
 .footer__copyright {
-  font-family: "OpenSans", sans-serif;
   color: #fff;
   margin-left: 300px;
   padding: 20px 0;
+}
+
+/* @font-face {
+  font-family: 'OpenSans Bold';
+  src: url('../fonts/OpenSans-Bold-webfont.ttf')format('truetype');
+  font-weight: bold;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular-webfont.ttf')format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Light';
+  src: url('../fonts/OpenSans-Light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINCyr Medium';
+  src: url('../fonts/DinCyMd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlumbBoldC';
+  src: url('../fonts/plumbboldc-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

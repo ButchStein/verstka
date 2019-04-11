@@ -1,126 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Home</title>
-  </head>
 
-  <body>
-    <!-- Вадим  для body классы можно задавать только в специализированных случаях, для кастомизации конкретной страницы-->
-    <!-- Перенес класс контент поставил как оберткуи -->
-    <!-- Добавил стили к .content  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/jquery.countdown.js"></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <!-- Вадим  для body классы можно задавать только в специализированных случаях, для кастомизации конкретной страницы-->
+  <!-- Перенес класс контент поставил как оберткуи -->
+  <!-- Добавил стили к .content  
         overflow: hidden - что бы из него вывалились марджины
         min-height: 100%; - что бы растянуть окно 
         background-position: 0 100%; - что бы выставить картинку 
     -->
-    <!-- Убрал у footer высоту она не нужна-->
+  <!-- Убрал у footer высоту она не нужна-->
 
-    <!-- Еще у тебя какой то странный reset, я убрал из него несколько стидей которые мешали верстке, потом пкажу что для этого лучше использовать-->
-    <div class="content">
-      <div class="main-wrapper">
-        <header class="header">
-          <div class="header__logo">
-            <a href="#"><img src="images/main_logo.png" alt="logo"/></a>
-          </div>
-          <div class="header__item2">
-            <h2>Единый абонемент</h2>
-          </div>
-          <div class="header__item3">
-            <h3>для занятий у любого партнера</h3>
-          </div>
-          <div class="header__item1">
-            <h1>всего за 1990.–</h1>
-          </div>
-          <p class="header__item4">до конца акции осталось:</p>
-          <div class="header__counter js-active"></div>
-        </header>
-
-        <form class="form" action="#" method="post">
-          <input
-            type="email"
-            name="email"
-            class="form-input input-mod"
-            placeholder="Введите свой E-mail адрес"
-          />
-          <select class="form-select select-mod">
-            <option>Выберите город</option>
-          </select>
-          <input
-            type="submit"
-            value="Отправить"
-            class="form-button button-mod"
-          />
-        </form>
-
-        <div class="slogan slogan-block ">
-          <p>
-            <b>MonPass</b> дает возможность заниматься фитнессом, йогой, танцами
-            и многим другим в вашем городе<br />
-            по единому абонементу с ежемесячной оплатой.
-          </p>
+  <!-- Еще у тебя какой то странный reset, я убрал из него несколько стидей которые мешали верстке, потом пкажу что для этого лучше использовать-->
+  <div class="content">
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <a href="#"><img src="images/main_logo.png" alt="logo" /></a>
         </div>
+        <div class="header__item2">
+          <h2>Единый абонемент</h2>
+        </div>
+        <div class="header__item3">
+          <h3>для занятий у любого партнера</h3>
+        </div>
+        <div class="header__item1">
+          <h1>всего за 1990.–</h1>
+        </div>
+        <p class="header__item4">до конца акции осталось:</p>
+        <div class="header__counter digits">
+          <script>
+            $(function () {
+              $(".digits").countdown({
+                image: "images/digits.png",
+                format: "hh:mm:ss",
+                endTime: new Date(2020, 12, 2)
+              });
+            });
+          </script>
+        </div>
+      </header>
 
-        <div class="options options-theme">
-          <div class="options__block">
-            <div class="options__elem1">
-              <img src="images/ticket_bg.png" alt="ticket" />
-            </div>
-            <div class="options__elem2">
-              <p>
-                Единый<br />
-                абонемент
-              </p>
-            </div>
-            <div class="options__elem3">
-              <p>Занимайтесь в любое время в любом месте</p>
-            </div>
+      <form class="form" action="#" method="post">
+        <input type="email" name="email" class="form-input input-mod" placeholder="Введите свой E-mail адрес" />
+        <select class="form-select select-mod">
+          <option>Выберите город</option>
+        </select>
+        <input type="submit" value="Отправить" class="form-button button-mod" />
+      </form>
+
+      <div class="slogan slogan-block ">
+        <p>
+          <span class="invert">MonPass</span> дает возможность заниматься фитнессом, йогой, танцами
+          и многим другим в вашем городе<br />
+          по единому абонементу с ежемесячной оплатой.
+        </p>
+      </div>
+
+      <div class="options options-theme">
+        <div class="options__block">
+          <div class="options__elem1">
+            <img src="images/ticket_bg.png" alt="ticket" />
           </div>
-          <div class="options__center view-1">
-            <div class="options__elem1">
-              <img src="images/manage_bg.png" alt="management" />
-            </div>
-            <div class="options__elem2">
-              <p>
-                Большой<br />
-                выбор
-              </p>
-            </div>
-            <div class="options__elem3">
-              <p>
-                Выбирайте любого<br />
-                из тысяч наших<br />
-                партнеров
-              </p>
-            </div>
+          <div class="options__elem2">
+            <p>
+              Единый<br />
+              абонемент
+            </p>
           </div>
-          <div class="options__block view-1">
-            <div class="options__elem1">
-              <img src="images/discont_bg.png" alt="percent" />
-            </div>
-            <div class="options__elem2">
-              <p>
-                Огромные<br />
-                скидки
-              </p>
-            </div>
-            <div class="options__elem3">
-              <p>
-                Пользователи<br />
-                MonPass экономят от
-              </p>
-            </div>
+          <div class="options__elem3">
+            <p>Занимайтесь в любое время в любом месте</p>
+          </div>
+        </div>
+        <div class="options__center view-1">
+          <div class="options__elem1">
+            <img src="images/manage_bg.png" alt="management" />
+          </div>
+          <div class="options__elem2">
+            <p>
+              Большой<br />
+              выбор
+            </p>
+          </div>
+          <div class="options__elem3">
+            <p>
+              Выбирайте любого<br />
+              из тысяч наших<br />
+              партнеров
+            </p>
+          </div>
+        </div>
+        <div class="options__block view-1">
+          <div class="options__elem1">
+            <img src="images/discont_bg.png" alt="percent" />
+          </div>
+          <div class="options__elem2">
+            <p>
+              Огромные<br />
+              скидки
+            </p>
+          </div>
+          <div class="options__elem3">
+            <p>
+              Пользователи<br />
+              MonPass экономят от<br />
+              50% до 90%
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer__copyright">
-        <p>2015 MonPass. Все права защищены</p>
-      </div>
-    </footer>
-  </body>
+  </div>
+  <footer class="footer">
+    <div class="footer__copyright">
+      <p>2015 MonPass. Все права защищены</p>
+    </div>
+  </footer>
+</body>
+
 </html>
