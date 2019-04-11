@@ -10,53 +10,45 @@
     <title>Home</title>
 </head>
 
-<body>
-    <div class="content content-bg">
-        <!-- main-wrapper лучше в данном макете не каждый блок окружать, а сделать общую обертку под контентом если не поймешь как забей я те потом сделаю покажу -->
-        <!-- Вадим отсюда надо убрать классы content__header 
-            то есть это тупо блок хеадер он не является элементом контента
-        -->
-        <header class="header content__header main-wrapper">
+<body class="content">
+
+    <!-- main-wrapper лучше в данном макете не каждый блок окружать, а сделать общую обертку под контентом если не поймешь как забей я те потом сделаю покажу -->
+    <!-- очень хетел бы увидеть пример -->
+    <div class="main-wrapper">
+        <header class="header">
             <div class="header__logo">
-                <a href="#"><img src="./images/main_logo.png" alt="logo"></a>
+                <a href="#"><img src="images/main_logo.png" alt="logo"></a>
             </div>
-            <div class="header__item2 content-h2">
+            <div class="header__item2">
                 <h2>Единый абонемент</h2>
             </div>
-            <div class="header__item3 content-h3">
+            <div class="header__item3">
                 <h3>для занятий у любого партнера</h3>
             </div>
-            <div class="header__item1 content-h1">
+            <div class="header__item1">
                 <h1>всего за 1990.–</h1>
             </div>
-            <p class="header__item4 content-p">до конца акции осталось:</p>
-            <div class="content__counter counter-bg js-active"></div>
+            <p class="header__item4">до конца акции осталось:</p>
+            <div class="header__counter js-active"></div>
         </header>
-        <!--отсюда надо убрать классы content__form сделать блок form и элементы от него 
-            то есть не content__form-select а  form__select
-        -->
-        <form class="content__form main-wrapper form-theme " action="#" method="post">
-            <input type="email" name="email" class="content__form-input input-mod"
-                placeholder="Введите свой E-mail адрес">
-            <select class="content__form-select select-mod">
+
+        <form class="form" action="#" method="post">
+            <input type="email" name="email" class="form-input input-mod" placeholder="Введите свой E-mail адрес">
+            <select class="form-select select-mod">
                 <option>Выберите город</option>
             </select>
-            <input type="submit" value="Отправить" class="content__form-button button-mod">
+            <input type="submit" value="Отправить" class="form-button button-mod">
         </form>
 
-        <!--отсюда надо убрать классы content__slogan сделать блок slogan и элементы от него 
-            то есть не content__form-select а  form__select
-        -->
-        <div class="content__slogan main-wrapper slogan-block ">
+
+        <div class="slogan slogan-block ">
             <p><b>MonPass</b> дает возможность заниматься фитнессом, йогой, танцами и многим другим в вашем
                 городе<br>
                 по единому абонементу с ежемесячной оплатой.</p>
         </div>
 
-        <!--отсюда надо убрать классы content__options сделать блок options и элементы от него 
-            то есть не content__form-select а  form__select
-        -->
-        <div class="content__options main-wrapper options-theme">
+
+        <div class="options options-theme">
             <div class="options__block">
                 <div class="options__elem1"><img src="images/ticket_bg.png" alt="ticket"></div>
                 <div class="options__elem2">
@@ -92,13 +84,14 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <footer class="footer main-wrapper">
+    </div>
+    <footer class="footer">
         <div class="footer__copyright">
             <p>2015 MonPass. Все права защищены</p>
         </div>
     </footer>
+
 </body>
 
 </html>
