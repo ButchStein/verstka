@@ -127,12 +127,20 @@ html, body {
   padding: 17px 30px;
 }
 
+.options {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 .options-theme {
   font-family: "OpenSans", sans-serif;
   font-size: 14px;
   color: #fff;
   text-align: center;
-  clear: both;
   margin-top: 35px;
 }
 
@@ -140,24 +148,19 @@ html, body {
   width: 177px;
   height: 187px;
   background: #323441;
-  float: left;
-  /*если ты освоил флоаты на уровне понимания я те прлогаю переделать их на flex, float мало используется уже, и нужен для работы со старыми броузерами*/
-  /* начал про флексы читать, но не понял вообще */
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 .options__center {
   width: 182px;
   height: 187px;
   background: #323441;
-  float: left;
-}
-
-.view-1 {
-  margin-left: 9px;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 .options__elem1 {
-  text-align: center;
   display: inline-block;
   margin-top: 21px;
 }
@@ -170,7 +173,6 @@ html, body {
 }
 
 .options__elem3 {
-  text-align: center;
   margin-top: 20px;
 }
 
